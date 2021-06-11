@@ -1,0 +1,58 @@
+
+.container__login {
+  position: relative;
+  background-image: url('../components/img/bg-image.png');
+  background-size: cover;
+  height: 100vh;
+}
+
+
+.form__login{
+  display: block;
+  justify-content:flex-start ;
+  position: absolute;
+  margin: 272px 815px 272px 115px;
+  align-content: center;
+  color: #FFFFFF;
+}
+
+.form__login h1 {
+  font-family: sans-serif;
+}
+
+.form__login div {
+  background: rgba(0, 0, 0, 0.32);
+  backdrop-filter: blur(2px);
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 3px;
+  height: 60px;
+  width: 300px;
+  columns: 2;
+}
+
+.form__login input {
+  background: transparent;
+  border: none;
+  padding: 10px;
+  margin: 3px;
+  display:block;
+  color: #FFFFFF;
+}
+
+.form__login label {
+  opacity: 0.5;
+  font-family: Heebo;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.form__login button {
+  background: #FFFFFF;
+  border-radius: 44px;
+  padding: 12px;
+  margin: 10px 50px;
+  border: none;
+}
