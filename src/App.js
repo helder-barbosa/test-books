@@ -5,19 +5,19 @@ import {
   Switch,
   Route,
 } from 'react-router-dom';
+import StoreProvider from './components/Store/Provider'
+import RoutesPrivate from './components/Routes/Private/Private'
 import LoginPage from './pages/Login';
 import HomePage from './pages/Home'
 
 const PagesRoot = () => (
   <Router>
-    <Switch>
-      <Route path="/login">
-        <LoginPage />
-      </Route>
-      <Route path="/">
-        <HomePage />
-      </Route>
-    </Switch>
+    <StoreProvider>
+      <Switch>
+        <Route path="/login" component={LoginPage} />
+        <RoutesPrivate path="/" component={HomePage} />
+      </Switch>
+    </StoreProvider>
   </Router>
 )
 
